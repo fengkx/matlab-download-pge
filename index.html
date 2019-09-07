@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>MatLab 2019</title>
+    <style>
+            .icon {
+              width: 1em;
+              height: 1em;
+              vertical-align: -0.15em;
+              fill: currentColor;
+              overflow: hidden;
+            }
+    </style>    
+</head>
+<body>
+    <section class="header-section">
+        <div class="jumbotron jumbotron-fluid bg-matlab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-xs-10">
+                        <h1 class="display-4 font-weight-normal">MATLAB 下载 </h1>
+                        <p class="lead font-weight-light">华南师范大学 现已开始提供 MATLAB、Simulink 及附带工具箱的正版全校授权。</p>
+                        <p class="lead font-weight-light">全体在校师生可以将这些产品用于教学、研究和学习。</br>Campus-Wide License 允许个人在校属设备或个人计算机上安装这些产品。</p>
+                    </div>
+                    <div  class="col-3 d-none d-sm-block">
+                        <img src="asset/matlab.png" class="center-block matlab-img img-responsive" alt="matlab">
+                    </div>
+                </div>
+                <hr class="my-4">
+                <a class="btn btn-outline-primary btn-lg" href="http://matlab.scnu.edu.cn" role="button">了解更多</a>
+            </div>
+        </div>
+    </section>
+    <section class="download-section">
+        <div class="container centered">
+            <h2 class="font-weight-normal mb-3">下载</h2>
+            <div class="icons row ">
+                <div class="col-4">
+                    <a href="https://i.scnu.edu.cn/soft/Matlab2019/R2019a_Windows.iso" download>
+                        <svg class="icon" aria-hidden="true">
+                             <use xlink:href="#icon-windows"></use>
+                        </svg>
+                    </a>                         
+                </div>
+                <div class="col-4">
+                    <a href="https://i.scnu.edu.cn/soft/Matlab2019/R2019a_Linux.iso" download>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-linux"></use>
+                        </svg>   
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="https://i.scnu.edu.cn/soft/Matlab2019/matlab_R2019a_maci64.dmg" download>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-macos"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ad-section" style="backgroud-color: red;">
+        
+    </section>
+    <section class="service-section bg-grey">
+        <div class="container centered">
+            <h2 class="font-weight-normal mb-3">更多服务</h2>
+            <div class="row icons">
+                <div class="col-6 col-md-3">
+                    <a href="https://bbs.scnu.edu.cn">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-luntan"></use>
+                        </svg>   
+                    </a>
+                    <p>新陶园BBS</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="https://pt.scnu.edu.cn">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-icon"></use>
+                        </svg> 
+                    </a>
+                    <p>陶园PT</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="/zixi">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-peixunjiaoshi"></use>
+                        </svg> 
+                    </a>
+                    <p>自习教室查询</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="/ical">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-iccalendar"></use>
+                        </svg> 
+                    </a>
+                    <p>iCal 课表生成</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="qr-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <img class="img-responsive" src="asset/qr.png">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- <p>Copyright © 2008-2018 <a href="https://i.scnu.edu.cn/about" target="_blank">ISCNU</a> All rights Reserved.<br><a href="https://i.scnu.edu.cn/about" target="_blank" style="color:#38485a; text-decoration:none">华南师范大学网络协会</a>技术部出品</p> -->
+                <p class="col-10">Copyright © 2008-2019 <a href="https://i.scnu.edu.cn/about" target="_blank">ISCNU</a><br><a href="https://i.scnu.edu.cn/about" target="_blank" style="color:#38485a; text-decoration:none">华南师范大学网络协会</a></p>
+                <div class="col-2">
+                        <a href="https://weibo.com/iscnu" class="contact contact-weibo" target="_blank"></a>
+                        <a  class="contact contact-wechat wechat_link" target="_blank"></a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/iconfont.js"></script>
+    <script>
+        let wechat = document.querySelector('.wechat_link');
+        if (navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1) {
+            wechat.setAttribute('href', 'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5OTcwMzIxNA==&scene=124#wechat_redirect')
+        } else {
+           wechat.setAttribute('data-target', '#qr-modal')
+           wechat.setAttribute('data-toggle', 'modal')
+        }
+
+
+    </script>
+</body>
+</html>
